@@ -2,8 +2,12 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import Image from 'next/image';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
 import PersonOutlineRoundedIcon from '@mui/icons-material/PersonOutlineRounded';
+import { useSideBarContext } from '@/context/SideBarContext';
 
 const Actions = () => {
+
+  const {stateSideBar, setStateSideBar} = useSideBarContext()
+
   return <div className='text-secondary-light
             flex justify-between items-center
             space-x-4'>
@@ -35,6 +39,7 @@ const Actions = () => {
       height={25}
       width={25}
       className='xs:hidden block'
+      onClick={()=> setStateSideBar(true)}
     />
 
   </div>;

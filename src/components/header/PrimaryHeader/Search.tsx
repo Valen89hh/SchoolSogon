@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const SearchBar = () => {
   return (
-    <div className="w-[30%]
+    <div className="w-[30%] max-w-sm
     hidden
     xs:flex items-center
     overflow-hidden space-x-2

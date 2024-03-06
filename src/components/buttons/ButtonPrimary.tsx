@@ -2,17 +2,17 @@ import React from "react";
 
 interface ButtonPrimaryProps{
     onClick: () => void;
-    text: string
+    children: React.ReactNode
 }
 
 const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
     onClick,
-    text
+    children
 }) => {
     return ( <button onClick={onClick} className="bg-primary w-fit 
     rounded-full py-1
      px-4 text-white">
-        {text}
+        {children}
     </button> );
 }
  

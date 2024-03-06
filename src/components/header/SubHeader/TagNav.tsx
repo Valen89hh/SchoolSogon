@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import style from './TagNav.module.css'
+
 
 interface TagNavProps{
     tag: string,
@@ -20,8 +22,8 @@ const TagNav: React.FC<TagNavProps> = ({
             onClick={onClick}
             href={navDirection}
             className={`
-            text-[13px]  transition-all ease-in-out
-            ${(selected) ? 'text-primary font-semibold' : 'text-secondary-light font-[400]'}`}>
+            text-[13px]
+            ${(selected) ? style.selected : style.unselected}`}>
          {tag}
         </Link>
     </li>

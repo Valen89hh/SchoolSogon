@@ -1,0 +1,34 @@
+
+.selected{
+    animation: semibold 1s ease-in-out forwards;
+}
+
+
+
+.unselected{
+    animation: light-font 1s ease-in-out forwards;
+}
+
+
+
+@keyframes semibold {
+    from{
+        font-weight: 400;
+        color: #95A5A6;
+    }
+    to{
+        font-weight: 600;
+        color: #19C37D;
+    }
+}
+
+@keyframes light-font {
+    from{
+        font-weight: 600;
+        color: #19C37D;
+    }
+    to{
+        font-weight: 400;
+        color: #95A5A6;
+    }
+}

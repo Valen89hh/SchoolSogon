@@ -4,13 +4,19 @@ import getPaths from "@/data/PathsNav/Paths";
 import TagNav from "./TagNav";
 import { useState } from "react";
 
+interface OptionsTagNavProps{
+    styles?: string
+}
 
-const OptionsTagNav = () => {
+
+const OptionsTagNav: React.FC<OptionsTagNavProps> = ({
+    styles = "space-x-2 md:space-x-5 flex-wrap justify-center"
+}) => {
 
     const [stateNav, setStateNav] = useState(0)
 
     return ( <nav>
-        <ul className="flex space-x-2 md:space-x-5 md:justify-start flex-wrap justify-center">
+        <ul className={`flex ${styles}`}>
             {
                 getPaths().map((path, i)=>(
                     <TagNav 
