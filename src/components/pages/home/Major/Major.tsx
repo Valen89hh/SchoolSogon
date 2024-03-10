@@ -1,15 +1,16 @@
-import Container from "@/components/containers/Container";
+import Container from "@/components/widgets/containers/Container";
 import SlideMajor from "./SlideMajor/SlideMajor";
 import SeeAll from "@/components/utils/SeeAll";
+import Title from "@/components/widgets/texts/Title";
 
 const Major = () => {
-    return ( <section className="bg-secondary py-8 px-2">
+    return (<section className="bg-secondary py-8 px-2">
         <Container>
-            <h3 className="text-[1.8rem] text-white font-bold text-center">DESTACADO</h3>
-            <SeeAll/>
-            <SlideMajor/>
+            <Title text="Destacado" color="text-white" />
+            <SeeAll />
+            <SlideMajor />
         </Container>
-    </section> );
+    </section>);
 }
- 
+
 export default Major;
