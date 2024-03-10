@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ContainerProps{
+interface ContainerProps {
     children: React.ReactNode
     className?: string
 }
@@ -9,9 +9,9 @@ const ContainerFlow: React.FC<ContainerProps> = ({
     className = "",
     children
 }) => {
-    return ( <section className={`px-7 m-auto ${className}`}>
+    return (<section className={`px-7 m-auto ${className}`}>
         {children}
-    </section> );
+    </section>);
 }
- 
+
 export default ContainerFlow;

@@ -40,7 +40,7 @@
         opacity: 0;
     }
     to{
-        z-index: 10;
+        z-index: 20;
         display: fixed;
         opacity: 1;
     }
@@ -48,7 +48,7 @@
 
 @keyframes invisible {
     from{
-        z-index: 10;
+        z-index: 20;
         display: fixed;
         opacity: 1;
     }
