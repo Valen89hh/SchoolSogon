@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
+import Header from "@/components/widgets/header/Header";
 
-const rubik = Rubik({subsets: ["latin"], weight: ["400", "700"]})
+const rubik = Rubik({ subsets: ["latin"], weight: ["400", "700"] })
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

@@ -9,7 +9,7 @@ const Container: React.FC<ContainerProps> = ({
     className = "",
     children
 }) => {
-    return ( <section className={`container m-auto ${className}`}>
+    return ( <section className={`container m-auto px-3 ${className}`}>
         {children}
     </section> );
 }
