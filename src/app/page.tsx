@@ -10,6 +10,7 @@ import ProfileContent from "@/components/pages/home/Profile/ProfileContent";
 import Image from "next/image";
 import { DocumentScannerOutlined } from "@mui/icons-material";
 import DocumentationSection from "@/components/pages/home/Documentation/DocumentationSection";
+import RegistrationSection from "@/components/pages/home/Registration/RegistrationSection";
 
 export default function Home() {
   return <>
@@ -17,5 +18,6 @@ export default function Home() {
     <ProfileContent />
     <Major />
     <DocumentationSection />
+    <RegistrationSection />
   </>;
 }

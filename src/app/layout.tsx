@@ -3,8 +3,8 @@ import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/widgets/header/Header";
 
-const rubik = Rubik({ subsets: ["latin"], weight: ["400", "700"] })
-const inter = Inter({ subsets: ["latin"] });
+const rubik = Rubik({ subsets: ["latin"], weight: ["400", "700", "300", "500", "600", "800", "900"] })
+
 
 export const metadata: Metadata = {
   title: "School",
